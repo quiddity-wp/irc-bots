@@ -479,7 +479,7 @@ class snerkBot(irc.IRCClient):
             self.msg(channel, random.choice(sayings))
             return
 
-        elif re.search(r'(^\s*!\s*pencil\s*$|^\s*pencil\s*!\s*$)', msg, re.I|re.U):
+        elif re.search(r'(^\s*!\s*pencil\s*$|^\s*pencil\s*!\s*$|^\s*!\s*✎\s*$|^\s*✎\s*!\s*$)', msg, re.I|re.U):
             self.demonstrate_emphasis(channel)
             return
 
